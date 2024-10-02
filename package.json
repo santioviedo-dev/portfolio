@@ -15,5 +15,8 @@
     "url": "https://github.com/santioviedo-dev/portfolio/issues"
   },
   "homepage": "https://github.com/santioviedo-dev/portfolio#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
 }

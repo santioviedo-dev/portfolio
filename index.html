@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="text-light" style="background-color: #030712">
+    <div class="container vh-100 d-flex flex-column">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid d-flex">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/assets/img/logo-blanco-sin-fondo-oficial-0-0.png"
+              alt="Logo"
+              class="d-inline-block align-top"
+              width="64"
+              height="64"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse gap-2 justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav gap-2">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Sobre mí</a
+              >
+              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="#">Habilidades</a>
+              <a class="nav-link" href="#">Contacto</a>
+            </div>
+            <span>|</span>
+            <div class="navbar-nav gap-2">
+              <button class="btn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 1C8.80653 2.19347 8.13604 3.81217 8.13604 5.5C8.13604 7.18783 8.80653 8.80653 10 10C11.1935 11.1935 12.8122 11.864 14.5 11.864C16.1878 11.864 17.8065 11.1935 19 10C19 11.78 18.4722 13.5201 17.4832 15.0001C16.4943 16.4802 15.0887 17.6337 13.4442 18.3149C11.7996 18.9961 9.99002 19.1743 8.24419 18.8271C6.49836 18.4798 4.89472 17.6226 3.63604 16.364C2.37737 15.1053 1.5202 13.5016 1.17294 11.7558C0.82567 10.01 1.0039 8.20038 1.68509 6.55585C2.36628 4.91131 3.51983 3.50571 4.99987 2.51677C6.47991 1.52784 8.21997 1 10 1Z"
+                    stroke="#D1D5DB"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button type="button" class="btn btn-light">Descargar CV</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header class="row justify-content-between align-items-center h-75">
+        <div class="col-lg-7 d-flex flex-column gap-2">
+          <div>
+            <h1 class="title text-light">
+              ¡Hola! Soy
+              <span class="text-red" style="color: #c73659">Santiago</span> 👋
+            </h1>
+            <p>
+              Soy
+              <span class="text-red" style="color: #c73659"
+                >Analista de Sistemas</span
+              >
+              y <span style="color: #c73659">Desarrollador de Software</span>.
+              Enfocado tanto en
+              <span class="fw-semibold">solucionar problemas</span>
+              como en
+              <span class="fw-semibold">crear soluciones.</span>
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-baseline gap-2"
+          >
+            <div class="d-flex align-items-center gap-2">
+              <svg
+                width="18"
+                height="22"
+                viewBox="0 0 18 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 9C17 15 9 21 9 21C9 21 1 15 1 9C1 6.87827 1.84285 4.84344 3.34315 3.34315C4.84344 1.84285 6.87827 1 9 1C11.1217 1 13.1566 1.84285 14.6569 3.34315C16.1571 4.84344 17 6.87827 17 9Z"
+                  stroke="#D1D5DB"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.34315 6 6 7.34315 6 9C6 10.6569 7.34315 12 9 12Z"
+                  stroke="#D1D5DB"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="align-self-center">Misiones, Argentina</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-start gap-2">
+              <svg
+                width="18"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="8" height="8" rx="4" fill="#10B981" />
+              </svg>
+              <span>Disponible para trabajar</span>
+            </div>
+          </div>
+          <div class=" d-flex gap-2">
+            <a href=""
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.9998 22V18C15.1389 16.7473 14.7797 15.4901 13.9998 14.5C16.9998 14.5 19.9998 12.5 19.9998 9C20.0798 7.75 19.7298 6.52 18.9998 5.5C19.2798 4.35 19.2798 3.15 18.9998 2C18.9998 2 17.9998 2 15.9998 3.5C13.3598 3 10.6398 3 7.99979 3.5C5.99979 2 4.99979 2 4.99979 2C4.69979 3.15 4.69979 4.35 4.99979 5.5C4.27167 6.51588 3.91827 7.75279 3.99979 9C3.99979 12.5 6.99979 14.5 9.99979 14.5C9.60979 14.99 9.31979 15.55 9.14979 16.15C8.97979 16.75 8.92979 17.38 8.99979 18V22"
+                  stroke="#D1D5DB"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 18C4.49 20 4 16 2 16"
+                  stroke="#D1D5DB"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg></a>
+            <a href=""
+              ><svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.37321 24H0.396429V7.97679H5.37321V24ZM2.88214 5.79107C1.29107 5.79107 0 4.47321 0 2.88214C0 2.11775 0.303653 1.38467 0.84416 0.84416C1.38467 0.303653 2.11775 0 2.88214 0C3.64653 0 4.37962 0.303653 4.92013 0.84416C5.46063 1.38467 5.76429 2.11775 5.76429 2.88214C5.76429 4.47321 4.47321 5.79107 2.88214 5.79107ZM23.9946 24H19.0286V16.2C19.0286 14.3411 18.9911 11.9571 16.4411 11.9571C13.8536 11.9571 13.4571 13.9768 13.4571 16.0661V24H8.48571V7.97679H13.2589V10.1625H13.3286C13.9929 8.90357 15.6161 7.575 18.0375 7.575C23.0732 7.575 24 10.8911 24 15.1982V24H23.9946Z"
+                  fill="#D1D5DB"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center align-items-center ">
+          <img class="mw-100 " src="/assets/img/my-photo2.jpeg" alt="" style="height: 16rem; clip-path: circle(50% at 50% 50%);">
+        </div>
+      </header>
+    </div>
+    <div class="container-fluid pt-5" style="background-color: #111827">
+      <h2 class="fs-6 text-center">
+        <button 
+          type="button" 
+          class="btn btn-secondary rounded-4" 
+          style="pointer-events: none;">
+          Sobre mí
+        </button>
+      </h2>
+      <div>
+        <div class="col-lg-6">
+          
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/index.js"></script>
+  </body>
 </html>
