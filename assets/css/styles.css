@@ -1,3 +1,19 @@
 .text-red {
-  color: #893839 !important;
+}
+
+.links .svg-1 path {
+  stroke: #f3f4f6; /* Color inicial */
+  transition: stroke 0.3s ease; /* Transición suave */
+}
+.links .svg-2 path {
+  fill: #f3f4f6; /* Color inicial */
+  transition: fill 0.3s ease; /* Transición suave */
+}
+
+.links:hover .svg-1 path {
+  stroke: #c73659; /* Color rojo en hover */
+}
+
+.links:hover .svg-2 path {
+  fill: #c73659; /* Color rojo en hover */
 }

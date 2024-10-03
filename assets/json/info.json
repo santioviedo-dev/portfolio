@@ -1,0 +1,36 @@
+{
+    "projects": [
+      {
+        "name": "Sistema de Reservas",
+        "description": "Sistema de reservas desarrollado con HTML, CSS, JavaScript, PHP y MySQL. Con el objetivo de cargar turnos/reservas de canchas (fútbol u otros deportes) y poder realizar filtros, agregar, eliminar o editar registros. Con validaciones de disponibilidad de los turnos, y un sistema de login completamente controlado.",
+        "skills": ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "BulmaCSS"],
+        "demo": "http://system.infinityfreeapp.com/index.php",
+        "github": "https://github.com/santioviedo-dev/fields-reservations",
+        "image": "/assets/img/reservations.png"
+      },
+      {
+        "name": "To-do App",
+        "description": "Diseño y desarrollo de aplicación de tareas utilizando HTML, CSS y JavaScript. Esta aplicación permite agregar, editar y eliminar tareas a su vez que filtrar entre las que ya están marcadas como completas y las que no.",
+        "skills": ["HTML", "CSS", "JavaScript"],
+        "demo": "https://to-do-app.zeabur.app",
+        "github": "https://github.com/santioviedo-dev/to-do-app",
+        "image": "/assets/img/todo-img.jpg"
+      },
+      {
+        "name": "Formulario de detalles de tarjeta de crédito",
+        "description": "Desarrollo de formulario con HTML, CSS y JavaScript para realizar carga de datos de tarjetas de crédito. Utilizando máscaras para actualizar dinámicamente los datos mostrados en pantalla y con animaciones CSS.",
+        "skills": ["HTML", "CSS", "JavaScript"],
+        "demo": "https://payment-details.zeabur.app",
+        "github": "https://github.com/santioviedo-dev/PaymentDetailsProject",
+        "image": "/assets/img/payment-details.png"
+      },
+      {
+        "name": "Calculadora Web",
+        "description": "Diseño y Desarrollo de calculadora funcional utilizando HTML, CSS y JavaScript. Incluyendo múltiples operaciones y un modo oscuro disponible, el cuál se guarda como preferencia en el navegador del usuario.",
+        "skills": ["HTML", "CSS", "JavaScript"],
+        "demo": "https://web-calculator.zeabur.app",
+        "github": "https://github.com/santioviedo-dev/web-calculator",
+        "image": "/assets/img/web-calculator.jpg"
+      }
+    ]
+  }

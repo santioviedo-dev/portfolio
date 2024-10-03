@@ -46,25 +46,8 @@
               <a class="nav-link" href="#">Habilidades</a>
               <a class="nav-link" href="#">Contacto</a>
             </div>
-            <span>|</span>
+            <!-- <span>|</span> -->
             <div class="navbar-nav gap-2">
-              <button class="btn">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 1C8.80653 2.19347 8.13604 3.81217 8.13604 5.5C8.13604 7.18783 8.80653 8.80653 10 10C11.1935 11.1935 12.8122 11.864 14.5 11.864C16.1878 11.864 17.8065 11.1935 19 10C19 11.78 18.4722 13.5201 17.4832 15.0001C16.4943 16.4802 15.0887 17.6337 13.4442 18.3149C11.7996 18.9961 9.99002 19.1743 8.24419 18.8271C6.49836 18.4798 4.89472 17.6226 3.63604 16.364C2.37737 15.1053 1.5202 13.5016 1.17294 11.7558C0.82567 10.01 1.0039 8.20038 1.68509 6.55585C2.36628 4.91131 3.51983 3.50571 4.99987 2.51677C6.47991 1.52784 8.21997 1 10 1Z"
-                    stroke="#D1D5DB"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
               <button type="button" class="btn btn-light">Descargar CV</button>
             </div>
           </div>
@@ -131,8 +114,9 @@
             </div>
           </div>
           <div class=" d-flex gap-2">
-            <a href=""
+            <a class="links" href="https://github.com/santioviedo-dev" target="_blank"
               ><svg
+                class="svg-1"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -153,8 +137,9 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 /></svg></a>
-            <a href=""
+            <a class="links" href="https://www.linkedin.com/in/santiago-oviedo-b0bb72235/" target="_blank"
               ><svg
+                class="svg-2"
                 width="22"
                 height="22"
                 viewBox="0 0 24 24"
@@ -208,60 +193,6 @@
         </h2>
         <h6 class="text-secondary text-center mt-2">Algunos de los proyectos que desarrollé.</h6>
         <div class="row pt-4 gap-4 projects-container">
-          <!-- <div class="card col-12 col-md-8 col-lg-12 m-auto m-lg-0 p-0 mb-3 text-start" style="background-color: #111827">
-            <div class="row g-0 ">
-              <div class=" col-md-12  col-lg-4" style="background-color: #374151;">
-                <img src="/assets/img/reservations.png" class="img-fluid h-100" alt="...">
-              </div>
-              <div class="col-md-12  col-lg-8">
-                <div class="card-body p-lg-4">
-                  <h5 class="card-title text-light">Card title</h5>
-                  <p class="card-text text-secondary">Sistema de reservas desarrollado con HTML, CSS, JavaScript, PHP y MySQL. Con el objetivo de cargar turnos/reservas de canchas (fútbol u otros deportes) y poder realizar filtros, agregar, eliminar o editar registros. Con validaciones de disponibilidad de los turnos, y un sistema de login completamente controlado.</p>
-                  <div class="d-flex gap-1">
-                    <h2 class="fs-6"></h2>
-                      <button 
-                        type="button" 
-                        class="btn btn-secondary text-muted border-0 rounded-4" 
-                        style="pointer-events: none;">
-                        HTML
-                      </button>
-                    </h2>
-                    <h2 class="fs-6"></h2>
-                      <button 
-                        type="button" 
-                        class="btn btn-secondary text-muted border-0 rounded-4" 
-                        style="pointer-events: none;">
-                        CSS
-                      </button>
-                    </h2>
-                    <h2 class="fs-6"></h2>
-                      <button 
-                        type="button" 
-                        class="btn btn-secondary text-muted border-0 rounded-4" 
-                        style="pointer-events: none;">
-                        JavaScript
-                      </button>
-                    </h2>
-                  </div>
-                  <div class="d-flex align-items-center gap-2 mt-3">
-                    <a href="" class="project-links">
-                      <svg class="svg-1" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24 17.3333V25.3333C24 26.0406 23.719 26.7189 23.219 27.219C22.7189 27.719 22.0406 28 21.3333 28H6.66667C5.95942 28 5.28115 27.719 4.78105 27.219C4.28095 26.7189 4 26.0406 4 25.3333V10.6667C4 9.95942 4.28095 9.28115 4.78105 8.78105C5.28115 8.28095 5.95942 8 6.66667 8H14.6667" stroke="#F3F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M20 4H28V12" stroke="#F3F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M13.3333 18.6667L27.9999 4" stroke="#F3F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        </a>
-                    <a href="" class="project-links"><svg class="svg-2" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20.9561 3.29419C20.9947 3.16864 21.0082 3.03672 20.9958 2.90596C20.9834 2.7752 20.9454 2.64815 20.884 2.53208C20.8225 2.41601 20.7388 2.31318 20.6375 2.22947C20.5363 2.14575 20.4196 2.08279 20.2941 2.04419C20.1685 2.00558 20.0366 1.99207 19.9059 2.00445C19.7751 2.01682 19.648 2.05483 19.532 2.1163C19.4159 2.17777 19.3131 2.26151 19.2294 2.36272C19.1456 2.46393 19.0827 2.58064 19.0441 2.70619L11.0441 28.7062C10.9661 28.9597 10.992 29.2339 11.1162 29.4683C11.2403 29.7027 11.4525 29.8782 11.7061 29.9562C11.9596 30.0342 12.2338 30.0082 12.4682 29.8841C12.7026 29.7599 12.8781 29.5477 12.9561 29.2942L20.9561 3.29419ZM9.70808 8.29219C9.8012 8.38508 9.87509 8.49543 9.9255 8.61692C9.97592 8.73841 10.0019 8.86865 10.0019 9.00019C10.0019 9.13172 9.97592 9.26196 9.9255 9.38345C9.87509 9.50494 9.8012 9.61529 9.70808 9.70819L3.41408 16.0002L9.70808 22.2922C9.89585 22.48 10.0013 22.7346 10.0013 23.0002C10.0013 23.2657 9.89585 23.5204 9.70808 23.7082C9.52031 23.896 9.26563 24.0014 9.00008 24.0014C8.73453 24.0014 8.47985 23.896 8.29208 23.7082L1.29208 16.7082C1.19895 16.6153 1.12507 16.5049 1.07465 16.3835C1.02424 16.262 0.998291 16.1317 0.998291 16.0002C0.998291 15.8687 1.02424 15.7384 1.07465 15.6169C1.12507 15.4954 1.19895 15.3851 1.29208 15.2922L8.29208 8.29219C8.38497 8.19906 8.49532 8.12517 8.61681 8.07476C8.7383 8.02435 8.86854 7.9984 9.00008 7.9984C9.13161 7.9984 9.26186 8.02435 9.38335 8.07476C9.50484 8.12517 9.61519 8.19906 9.70808 8.29219ZM22.2921 8.29219C22.199 8.38508 22.1251 8.49543 22.0747 8.61692C22.0242 8.73841 21.9983 8.86865 21.9983 9.00019C21.9983 9.13172 22.0242 9.26196 22.0747 9.38345C22.1251 9.50494 22.199 9.61529 22.2921 9.70819L28.5861 16.0002L22.2921 22.2922C22.1991 22.3852 22.1253 22.4955 22.075 22.617C22.0247 22.7385 21.9988 22.8687 21.9988 23.0002C21.9988 23.1317 22.0247 23.2619 22.075 23.3834C22.1253 23.5048 22.1991 23.6152 22.2921 23.7082C22.3851 23.8012 22.4954 23.8749 22.6169 23.9252C22.7384 23.9756 22.8686 24.0014 23.0001 24.0014C23.1316 24.0014 23.2618 23.9756 23.3832 23.9252C23.5047 23.8749 23.6151 23.8012 23.7081 23.7082L30.7081 16.7082C30.8012 16.6153 30.8751 16.5049 30.9255 16.3835C30.9759 16.262 31.0019 16.1317 31.0019 16.0002C31.0019 15.8687 30.9759 15.7384 30.9255 15.6169C30.8751 15.4954 30.8012 15.3851 30.7081 15.2922L23.7081 8.29219C23.6152 8.19906 23.5048 8.12517 23.3833 8.07476C23.2619 8.02435 23.1316 7.9984 23.0001 7.9984C22.8685 7.9984 22.7383 8.02435 22.6168 8.07476C22.4953 8.12517 22.385 8.19906 22.2921 8.29219Z" />
-                      </svg>
-                      
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -318,7 +249,108 @@
         </div>
       </div>
     </section>
+    <section class="container-fluid text-center py-5">
+      <h2 class="fs-6 container-md"></h2>
+          <button 
+            type="button" 
+            class="btn btn-secondary rounded-4" 
+            style="pointer-events: none;">
+            Contacto
+          </button>
+        </h2>
+        <h6 class="text-secondary mt-2 m-auto" style="max-width: 540px;">No dudes en comunicarte conmigo si estás buscando un desarrollador, tenes alguna consulta o simplemente queres comunicarte.</h6>
+        <div class="  mt-4 fs-4 fw-semibold d-flex flex-column align-items-center justify-content-center">
+          <div class="d-flex gap-3 align-items-center">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.6667 5.33301H5.33341C3.86066 5.33301 2.66675 6.52692 2.66675 7.99967V23.9997C2.66675 25.4724 3.86066 26.6663 5.33341 26.6663H26.6667C28.1395 26.6663 29.3334 25.4724 29.3334 23.9997V7.99967C29.3334 6.52692 28.1395 5.33301 26.6667 5.33301Z" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29.3334 9.33301L17.3734 16.933C16.9618 17.1909 16.4858 17.3277 16.0001 17.3277C15.5143 17.3277 15.0384 17.1909 14.6267 16.933L2.66675 9.33301" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            <span id="textToCopy1">oviedos412@gmail.com</span>
+            <a href="" class="links copyButton">
+              <svg class="svg-1" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.6667 10.667H13.3334C11.8607 10.667 10.6667 11.8609 10.6667 13.3337V26.667C10.6667 28.1398 11.8607 29.3337 13.3334 29.3337H26.6667C28.1395 29.3337 29.3334 28.1398 29.3334 26.667V13.3337C29.3334 11.8609 28.1395 10.667 26.6667 10.667Z" stroke="#f8f9fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.33341 21.3337C3.86675 21.3337 2.66675 20.1337 2.66675 18.667V5.33366C2.66675 3.86699 3.86675 2.66699 5.33341 2.66699H18.6667C20.1334 2.66699 21.3334 3.86699 21.3334 5.33366" stroke="#f8f9fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+          </div>
+          <div class="d-flex gap-3 align-items-center">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.3334 22.5605V26.5605C29.3349 26.9318 29.2589 27.2993 29.1101 27.6396C28.9613 27.9798 28.7431 28.2852 28.4695 28.5363C28.1959 28.7873 27.8728 28.9784 27.5211 29.0974C27.1693 29.2164 26.7966 29.2605 26.4267 29.2271C22.3239 28.7813 18.3827 27.3793 14.9201 25.1338C11.6985 23.0867 8.96719 20.3554 6.92007 17.1338C4.66671 13.6554 3.2644 9.69511 2.82674 5.57379C2.79342 5.20508 2.83724 4.83347 2.95541 4.48262C3.07357 4.13177 3.2635 3.80937 3.51309 3.53595C3.76269 3.26253 4.06648 3.04407 4.40513 2.89448C4.74378 2.7449 5.10986 2.66747 5.48007 2.66712H9.48007C10.1271 2.66075 10.7545 2.88989 11.2451 3.31183C11.7357 3.73377 12.0562 4.31972 12.1467 4.96045C12.3156 6.24054 12.6287 7.49742 13.0801 8.70712C13.2595 9.18435 13.2983 9.70301 13.1919 10.2016C13.0856 10.7002 12.8386 11.1579 12.4801 11.5205L10.7867 13.2138C12.6848 16.5518 15.4487 19.3157 18.7867 21.2138L20.4801 19.5205C20.8426 19.162 21.3003 18.9149 21.7989 18.8086C22.2975 18.7022 22.8162 18.7411 23.2934 18.9205C24.5031 19.3719 25.76 19.685 27.0401 19.8538C27.6878 19.9452 28.2793 20.2714 28.7021 20.7704C29.125 21.2695 29.3496 21.9066 29.3334 22.5605Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+            <span id="textToCopy2">+54 9 3764 50-9714</span>
+            <a href="" class="links copyButton" >
+              <svg class="svg-1" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.6667 10.667H13.3334C11.8607 10.667 10.6667 11.8609 10.6667 13.3337V26.667C10.6667 28.1398 11.8607 29.3337 13.3334 29.3337H26.6667C28.1395 29.3337 29.3334 28.1398 29.3334 26.667V13.3337C29.3334 11.8609 28.1395 10.667 26.6667 10.667Z" stroke="#f8f9fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.33341 21.3337C3.86675 21.3337 2.66675 20.1337 2.66675 18.667V5.33366C2.66675 3.86699 3.86675 2.66699 5.33341 2.66699H18.6667C20.1334 2.66699 21.3334 3.86699 21.3334 5.33366" stroke="#f8f9fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+          </div>
+        </div>
+        <span class="text-white-50 d-block mt-4">¡También podés encontrarme en estas plataformas!</span>
+        <div class=" mt-1 d-flex align-items-center justify-content-center gap-2">
+          <a class="links" href="https://www.linkedin.com/in/santiago-oviedo-b0bb72235/" target="_blank"
+              ><svg class="svg-2"
+                width="22"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.37321 24H0.396429V7.97679H5.37321V24ZM2.88214 5.79107C1.29107 5.79107 0 4.47321 0 2.88214C0 2.11775 0.303653 1.38467 0.84416 0.84416C1.38467 0.303653 2.11775 0 2.88214 0C3.64653 0 4.37962 0.303653 4.92013 0.84416C5.46063 1.38467 5.76429 2.11775 5.76429 2.88214C5.76429 4.47321 4.47321 5.79107 2.88214 5.79107ZM23.9946 24H19.0286V16.2C19.0286 14.3411 18.9911 11.9571 16.4411 11.9571C13.8536 11.9571 13.4571 13.9768 13.4571 16.0661V24H8.48571V7.97679H13.2589V10.1625H13.3286C13.9929 8.90357 15.6161 7.575 18.0375 7.575C23.0732 7.575 24 10.8911 24 15.1982V24H23.9946Z"
+                  fill="#D1D5DB"
+                />
+              </svg></a>
+          <a class="links" href="https://github.com/santioviedo-dev" target="_blank"
+              ><svg class="svg-1"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.9998 22V18C15.1389 16.7473 14.7797 15.4901 13.9998 14.5C16.9998 14.5 19.9998 12.5 19.9998 9C20.0798 7.75 19.7298 6.52 18.9998 5.5C19.2798 4.35 19.2798 3.15 18.9998 2C18.9998 2 17.9998 2 15.9998 3.5C13.3598 3 10.6398 3 7.99979 3.5C5.99979 2 4.99979 2 4.99979 2C4.69979 3.15 4.69979 4.35 4.99979 5.5C4.27167 6.51588 3.91827 7.75279 3.99979 9C3.99979 12.5 6.99979 14.5 9.99979 14.5C9.60979 14.99 9.31979 15.55 9.14979 16.15C8.97979 16.75 8.92979 17.38 8.99979 18V22"
+                  stroke="#D1D5DB"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 18C4.49 20 4 16 2 16"
+                  stroke="#D1D5DB"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg></a>
+            <a class="links" href="https://x.com/S4nT1_Oviedo" target="_blank">
+              <svg class="svg-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 4.00002C22 4.00002 21.3 6.10002 20 7.40002C21.6 17.4 10.6 24.7 2 19C4.2 19.1 6.4 18.4 8 17C3 15.5 0.5 9.60002 3 5.00002C5.2 7.60002 8.6 9.10002 12 9.00002C11.1 4.80002 16 2.40002 19 5.20002C20.1 5.20002 22 4.00002 22 4.00002Z" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+    <footer class="container-fluid py-2 d-flex justify-content-center" style="background-color: #111827;">
+      <span>2024 | <span class="text-decoration-underline">Desarrollado</span> por <span class="fw-semibold">Santiago Oviedo</span></span>
+    </footer>
+
+
+
+
+    <!-- TOAST -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div class="toast hide align-items-center bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex text-light">
+        <div class="toast-body">
+        ¡Texto copiado con éxito!
+       </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    </div>
     
+    <script  src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="/assets/js/index.js"></script>
   </body>
 </html>
