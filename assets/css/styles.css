@@ -17,3 +17,10 @@
 .links:hover .svg-2 path {
   fill: #c73659; /* Color rojo en hover */
 }
+
+
+@media screen and (max-width:991px) {
+  .my-photo {
+    height: 12rem !important;
+  }
+}
