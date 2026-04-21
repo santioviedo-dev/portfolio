@@ -1,357 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Santiago Oviedo - Portafolio</title>
-    <link
-      rel="stylesheet"
-      href="assets/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
-  </head>
-  <body class="text-light" style="background-color: #030712">
-    <div class="container vh-100 d-flex flex-column">
-      <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid d-flex">
-          <a class="navbar-brand" href="#">
-            <img
-              src="assets/img/logo-blanco-sin-fondo-oficial-0-0.png"
-              alt="Logo"
-              class="d-inline-block align-top"
-              width="64"
-              height="64"
-            />
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santiago Oviedo — Desarrollador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">SO_dev</a>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+  <a class="nav-cv" href="assets/files/SantiagoAngelOviedoCV.pdf" download>↓ CV</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Disponible para trabajar</div>
+    <h1 class="hero-name">
+      Santiago<br>
+      <em>Oviedo</em>
+    </h1>
+    <p class="hero-desc">
+      <strong>Analista de Sistemas</strong> con foco en desarrollo backend y automatización.
+      Construyo herramientas reales en Python que integran APIs, procesan datos
+      y optimizan operaciones en producción.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#projects">Ver proyectos</a>
+      <a class="btn-ghost" href="#contact">Contacto</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <img src="assets/img/my-photo2.jpg" alt="Santiago Oviedo">
+      <div class="hero-social">
+        <a href="https://github.com/santioviedo-dev" target="_blank">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/santiago-oviedo-analista/" target="_blank">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">01 — Sobre mí</div>
+  <div class="about-grid">
+    <div class="about-left">
+      <p>
+        Soy Analista de Sistemas recibido con promedio de <strong>9.16</strong>, actualmente trabajando como Sysadmin en la Universidad Gastón Dachary donde desarrollo automatizaciones Python en producción.
+      </p>
+      <p>
+        Mi perfil es principalmente <strong>backend y automatización</strong>: integro APIs con OAuth2, proceso datos estructurados, y construyo pipelines que reemplazan flujos manuales por procesos confiables y escalables.
+      </p>
+      <p>
+        Complemento esto con experiencia en infraestructura Linux, redes y virtualización — lo que me da contexto real sobre cómo el software corre en producción.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-val">9.16</div>
+          <div class="stat-label">Promedio carrera</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">+30</div>
+          <div class="stat-label">Servidores Linux</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">~800</div>
+          <div class="stat-label">Cuentas migradas</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">−75%</div>
+          <div class="stat-label">Tiempo op. diaria</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right">
+      <div class="exp-item">
+        <div class="exp-date">May 2025 — hoy</div>
+        <div>
+          <div class="exp-title">Administrador de Sistemas (Sysadmin)</div>
+          <div class="exp-company">Universidad Gastón Dachary</div>
+          <div class="exp-desc">Administración de infraestructura Proxmox (5 nodos), +30 servidores Linux, redes pfSense y automatizaciones Python que integran APIs externas en producción.</div>
+          <div class="exp-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Proxmox</span>
+            <span class="tag">Linux</span>
+            <span class="tag">APIs REST</span>
+            <span class="tag">OAuth2</span>
+            <span class="tag">pfSense</span>
+          </div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-date">Ago 2023 — Abr 2025</div>
+        <div>
+          <div class="exp-title">Soporte Técnico / Clases Virtuales</div>
+          <div class="exp-company">Universidad Gastón Dachary</div>
+          <div class="exp-desc">Administración de Zoom y Moodle para educación virtual, soporte IT general.</div>
+          <div class="exp-tags">
+            <span class="tag">Zoom</span>
+            <span class="tag">Moodle</span>
+            <span class="tag">IT Support</span>
+          </div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-date">2024</div>
+        <div>
+          <div class="exp-title">Instructor de Python (Online)</div>
+          <div class="exp-company">Curso sincrónico via Discord</div>
+          <div class="exp-desc">Diseño y dictado de curso de Python desde cero: temario, ejercicios prácticos y debugging en vivo. Clases particulares de informática y programación.</div>
+          <div class="exp-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Docencia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">02 — Proyectos</div>
+  <div class="projects-grid">
+
+    <!-- ZoomTube - featured -->
+    <div class="project-card featured">
+      <div>
+        <div class="project-number">001 — Producción</div>
+        <h3>ZoomTube</h3>
+        <p>Pipeline de automatización completo que integra la API de Zoom y la API de YouTube con autenticación OAuth2. Descarga grabaciones, normaliza nombres y metadata, y las sube automáticamente sin intervención manual.</p>
+        <div class="project-impact">Redujo el flujo diario de 15–20 grabaciones de 1–2 hs a ~30 min</div>
+        <div class="exp-tags" style="margin-bottom: 1.5rem;">
+          <span class="tag">Python</span>
+          <span class="tag">Zoom API</span>
+          <span class="tag">YouTube API</span>
+          <span class="tag">OAuth2</span>
+          <span class="tag">Pipeline</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="https://github.com/santioviedo-dev/zoomtube" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <img class="project-img" src="assets/img/canchas-landing.png" alt="ZoomTube" style="align-self: stretch; object-fit: cover;">
+    </div>
+
+    <!-- MailOps -->
+    <div class="project-card">
+      <div class="project-number">002 — Producción</div>
+      <h3>MailOps</h3>
+      <p>Herramienta interna para operaciones masivas sobre cuentas de correo vía cPanel API: creación desde CSV/Excel, generación automática de credenciales y notificaciones SMTP con templates.</p>
+      <div class="project-impact">Eliminó gestión manual de ~800 cuentas durante migración</div>
+      <div class="exp-tags" style="margin-bottom: 1.5rem;">
+        <span class="tag">Python</span>
+        <span class="tag">cPanel API</span>
+        <span class="tag">SMTP</span>
+        <span class="tag">CSV/Excel</span>
+      </div>
+      <div class="project-footer">
+        <div class="project-links">
+          <a href="https://github.com/santioviedo-dev/MailOps" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse gap-2 justify-content-end"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav gap-2">
-              <a class="nav-link" href="#about"
-                >Sobre mí</a
-              >
-              <a class="nav-link" href="#projects">Proyectos</a>
-              <a class="nav-link" href="#skills">Habilidades</a>
-              <a class="nav-link" href="#contact">Contacto</a>
-            </div>
-            <!-- <span>|</span> -->
-            <div class="navbar-nav gap-2">
-              <a href="assets/files/SantiagoAngelOviedoCV.pdf" download><button type="button" class="btn btn-light">Descargar CV</button></a>
-            </div>
-          </div>
         </div>
-      </nav>
-      <header class="row  justify-content-between align-items-center h-75">
-        <div class="col-lg-7 d-flex flex-column gap-2 order-2 order-lg-1">
-          <div>
-            <h1 class="title text-light">
-              ¡Hola! Soy
-              <span class="text-red" style="color: #c73659">Santiago</span> 👋
-            </h1>
-            <p>
-              Soy
-              <span class="text-red" style="color: #c73659"
-                >Analista de Sistemas</span
-              >
-              y <span style="color: #c73659">Desarrollador de Software</span>.
-              Enfocado tanto en
-              <span class="fw-semibold">solucionar problemas</span>
-              como en
-              <span class="fw-semibold">crear soluciones.</span>
-            </p>
-          </div>
-          <div
-            class="d-flex flex-column justify-content-center align-baseline gap-2"
-          >
-            <div class="d-flex align-items-center gap-2">
-              <svg
-                width="18"
-                height="22"
-                viewBox="0 0 18 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17 9C17 15 9 21 9 21C9 21 1 15 1 9C1 6.87827 1.84285 4.84344 3.34315 3.34315C4.84344 1.84285 6.87827 1 9 1C11.1217 1 13.1566 1.84285 14.6569 3.34315C16.1571 4.84344 17 6.87827 17 9Z"
-                  stroke="#D1D5DB"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.34315 6 6 7.34315 6 9C6 10.6569 7.34315 12 9 12Z"
-                  stroke="#D1D5DB"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <span class="align-self-center">Misiones, Argentina</span>
-            </div>
-            <div class="d-flex align-items-center justify-content-start gap-2">
-              <svg
-                width="18"
-                height="8"
-                viewBox="0 0 8 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="8" height="8" rx="4" fill="#10B981" />
-              </svg>
-              <span>Disponible para trabajar</span>
-            </div>
-          </div>
-          <div class=" d-flex gap-2">
-            <a class="links" href="https://github.com/santioviedo-dev" target="_blank"
-              ><svg
-                class="svg-1"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.9998 22V18C15.1389 16.7473 14.7797 15.4901 13.9998 14.5C16.9998 14.5 19.9998 12.5 19.9998 9C20.0798 7.75 19.7298 6.52 18.9998 5.5C19.2798 4.35 19.2798 3.15 18.9998 2C18.9998 2 17.9998 2 15.9998 3.5C13.3598 3 10.6398 3 7.99979 3.5C5.99979 2 4.99979 2 4.99979 2C4.69979 3.15 4.69979 4.35 4.99979 5.5C4.27167 6.51588 3.91827 7.75279 3.99979 9C3.99979 12.5 6.99979 14.5 9.99979 14.5C9.60979 14.99 9.31979 15.55 9.14979 16.15C8.97979 16.75 8.92979 17.38 8.99979 18V22"
-                  stroke="#D1D5DB"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M9 18C4.49 20 4 16 2 16"
-                  stroke="#D1D5DB"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                /></svg></a>
-            <a class="links" href="https://www.linkedin.com/in/santiago-oviedo-b0bb72235/" target="_blank"
-              ><svg
-                class="svg-2"
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.37321 24H0.396429V7.97679H5.37321V24ZM2.88214 5.79107C1.29107 5.79107 0 4.47321 0 2.88214C0 2.11775 0.303653 1.38467 0.84416 0.84416C1.38467 0.303653 2.11775 0 2.88214 0C3.64653 0 4.37962 0.303653 4.92013 0.84416C5.46063 1.38467 5.76429 2.11775 5.76429 2.88214C5.76429 4.47321 4.47321 5.79107 2.88214 5.79107ZM23.9946 24H19.0286V16.2C19.0286 14.3411 18.9911 11.9571 16.4411 11.9571C13.8536 11.9571 13.4571 13.9768 13.4571 16.0661V24H8.48571V7.97679H13.2589V10.1625H13.3286C13.9929 8.90357 15.6161 7.575 18.0375 7.575C23.0732 7.575 24 10.8911 24 15.1982V24H23.9946Z"
-                  fill="#D1D5DB"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-5 d-flex justify-content-center justify-content-sm-start justify-content-lg-around align-items-center order-1 order-lg-2">
-          <img class="mw-100 img-fluid my-photo" src="assets/img/my-photo.jpg" alt="" style="height: 16rem; clip-path: circle(50% at 50% 50%);">
-        </div>
-      </header>
-    </div>
-    <section class="container-fluid py-5" id="about" style="background-color: #111827">
-      <div class="container">
-        <h2 class="fs-6 text-center">
-          <button 
-            type="button" 
-            class="btn btn-secondary rounded-4" 
-            style="pointer-events: none;">
-            Sobre mí
-          </button>
-        </h2>
-        <div class="row justify-content-between align-items-center gap-4 gap-md-0 mt-4 m-auto">
-          <div class="col-lg-4">
-            <img class="mw-100 m-auto" src="assets/img/undraw_feeling_proud_qne1.svg" alt="">
-          </div>
-          <div class="col-lg-6">
-            <h3 class="fs-4">¿Quieres saber más sobre mí?</h3>
-              <p class="text-break" style="text-wrap:balance">Soy un Analista de Sistemas y desarrollador de Software, entusiasmado por la creación e implementación de aplicaciones a medida. Disfruto de todas las etapas del desarrollo de un software, desde el análisis de requerimientos hasta el mantenimiento del mismo, siempre focalizado en desarrollar soluciones efectivas e innovadoras.</p>
-              <p style="text-wrap:balance">Cuento con experiencia en tecnologías frontend como HTML, CSS, Javascript y frameworks de CSS. Como también en tecnologías Backend como PHP, Laravel, NodeJS, MySQL, con capacidad de implementación de Procedimientos almacenados, API's, Backups y tests entre otras aptitudes.  </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid" id="projects"></section>
-      <div class="container text-center my-5">
-        <h2 class="fs-6"></h2>
-          <button 
-            type="button" 
-            class="btn btn-secondary rounded-4" 
-            style="pointer-events: none;">
-            Proyectos
-          </button>
-        </h2>
-        <h6 class="text-secondary text-center mt-2">Algunos de los proyectos que desarrollé.</h6>
-        <div class="row pt-4 gap-4 projects-container">
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid py-5" id="skills" style="background-color: #111827">
-      <h2 class="fs-6 text-center">
-        <button 
-          type="button" 
-          class="btn btn-secondary rounded-4" 
-          style="pointer-events: none;">
-          Habilidades
-        </button>
-      </h2>
-      <h6 class="text-secondary text-center mt-2">Tecnologías con las que estoy familiarizado.</h6>
-      <div class="d-flex text-center align-items-center justify-content-around justify-content-md-center w-75 flex-wrap m-auto gap-5 mt-4">
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/html5.svg" alt="">
-          <span>HTML</span>
-        </div>
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/css.svg" alt="">
-          <span>CSS</span>
-        </div>
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/bootstrap.svg" alt="">
-          <span>Bootstrap</span>
-        </div>
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/javascript.svg" alt="">
-          <span>Javascript</span>
-        </div>
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/Php_dark.svg" alt="">
-          <span>PHP</span>
-        </div>
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/laravel.svg" alt="">
-          <span>Laravel</span>
-        </div>
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/nodejs.svg" alt="">
-          <span>NodeJS</span>
-        </div>
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/mysql.svg" alt="">
-          <span>MySQL</span>
-        </div>
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/git.svg" alt="">
-          <span>Git</span>
-        </div>
-        <div class=" col-4 col-md-3  col-lg-1  d-flex flex-column">
-          <img class="mw-100" style="height:5rem;" src="assets/img/wordpress.svg" alt="">
-          <span>wordpress</span>
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid text-center py-5" id="contact">
-      <h2 class="fs-6 container-md"></h2>
-          <button 
-            type="button" 
-            class="btn btn-secondary rounded-4" 
-            style="pointer-events: none;">
-            Contacto
-          </button>
-        </h2>
-        <h6 class="text-secondary mt-2 m-auto" style="max-width: 540px;">No dudes en comunicarte conmigo si estás buscando un desarrollador, tenes alguna consulta o simplemente queres comunicarte.</h6>
-        <div class="  mt-4 fs-4 fw-semibold d-flex flex-column align-items-center justify-content-center">
-          <div class="d-flex gap-3 align-items-center">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M26.6667 5.33301H5.33341C3.86066 5.33301 2.66675 6.52692 2.66675 7.99967V23.9997C2.66675 25.4724 3.86066 26.6663 5.33341 26.6663H26.6667C28.1395 26.6663 29.3334 25.4724 29.3334 23.9997V7.99967C29.3334 6.52692 28.1395 5.33301 26.6667 5.33301Z" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M29.3334 9.33301L17.3734 16.933C16.9618 17.1909 16.4858 17.3277 16.0001 17.3277C15.5143 17.3277 15.0384 17.1909 14.6267 16.933L2.66675 9.33301" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            <span id="textToCopy1">oviedos412@gmail.com</span>
-            <a href="" class="links copyButton">
-              <svg class="svg-1" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M26.6667 10.667H13.3334C11.8607 10.667 10.6667 11.8609 10.6667 13.3337V26.667C10.6667 28.1398 11.8607 29.3337 13.3334 29.3337H26.6667C28.1395 29.3337 29.3334 28.1398 29.3334 26.667V13.3337C29.3334 11.8609 28.1395 10.667 26.6667 10.667Z" stroke="#f8f9fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M5.33341 21.3337C3.86675 21.3337 2.66675 20.1337 2.66675 18.667V5.33366C2.66675 3.86699 3.86675 2.66699 5.33341 2.66699H18.6667C20.1334 2.66699 21.3334 3.86699 21.3334 5.33366" stroke="#f8f9fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-          </div>
-          <div class="d-flex gap-3 align-items-center">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M29.3334 22.5605V26.5605C29.3349 26.9318 29.2589 27.2993 29.1101 27.6396C28.9613 27.9798 28.7431 28.2852 28.4695 28.5363C28.1959 28.7873 27.8728 28.9784 27.5211 29.0974C27.1693 29.2164 26.7966 29.2605 26.4267 29.2271C22.3239 28.7813 18.3827 27.3793 14.9201 25.1338C11.6985 23.0867 8.96719 20.3554 6.92007 17.1338C4.66671 13.6554 3.2644 9.69511 2.82674 5.57379C2.79342 5.20508 2.83724 4.83347 2.95541 4.48262C3.07357 4.13177 3.2635 3.80937 3.51309 3.53595C3.76269 3.26253 4.06648 3.04407 4.40513 2.89448C4.74378 2.7449 5.10986 2.66747 5.48007 2.66712H9.48007C10.1271 2.66075 10.7545 2.88989 11.2451 3.31183C11.7357 3.73377 12.0562 4.31972 12.1467 4.96045C12.3156 6.24054 12.6287 7.49742 13.0801 8.70712C13.2595 9.18435 13.2983 9.70301 13.1919 10.2016C13.0856 10.7002 12.8386 11.1579 12.4801 11.5205L10.7867 13.2138C12.6848 16.5518 15.4487 19.3157 18.7867 21.2138L20.4801 19.5205C20.8426 19.162 21.3003 18.9149 21.7989 18.8086C22.2975 18.7022 22.8162 18.7411 23.2934 18.9205C24.5031 19.3719 25.76 19.685 27.0401 19.8538C27.6878 19.9452 28.2793 20.2714 28.7021 20.7704C29.125 21.2695 29.3496 21.9066 29.3334 22.5605Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              
-            <span id="textToCopy2">+54 9 3764 50-9714</span>
-            <a href="" class="links copyButton" >
-              <svg class="svg-1" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M26.6667 10.667H13.3334C11.8607 10.667 10.6667 11.8609 10.6667 13.3337V26.667C10.6667 28.1398 11.8607 29.3337 13.3334 29.3337H26.6667C28.1395 29.3337 29.3334 28.1398 29.3334 26.667V13.3337C29.3334 11.8609 28.1395 10.667 26.6667 10.667Z" stroke="#f8f9fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M5.33341 21.3337C3.86675 21.3337 2.66675 20.1337 2.66675 18.667V5.33366C2.66675 3.86699 3.86675 2.66699 5.33341 2.66699H18.6667C20.1334 2.66699 21.3334 3.86699 21.3334 5.33366" stroke="#f8f9fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-          </div>
-        </div>
-        <span class="text-white-50 d-block mt-4">¡También podés encontrarme en estas plataformas!</span>
-        <div class=" mt-1 d-flex align-items-center justify-content-center gap-2">
-          <a class="links" href="https://www.linkedin.com/in/santiago-oviedo-b0bb72235/" target="_blank"
-              ><svg class="svg-2"
-                width="22"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.37321 24H0.396429V7.97679H5.37321V24ZM2.88214 5.79107C1.29107 5.79107 0 4.47321 0 2.88214C0 2.11775 0.303653 1.38467 0.84416 0.84416C1.38467 0.303653 2.11775 0 2.88214 0C3.64653 0 4.37962 0.303653 4.92013 0.84416C5.46063 1.38467 5.76429 2.11775 5.76429 2.88214C5.76429 4.47321 4.47321 5.79107 2.88214 5.79107ZM23.9946 24H19.0286V16.2C19.0286 14.3411 18.9911 11.9571 16.4411 11.9571C13.8536 11.9571 13.4571 13.9768 13.4571 16.0661V24H8.48571V7.97679H13.2589V10.1625H13.3286C13.9929 8.90357 15.6161 7.575 18.0375 7.575C23.0732 7.575 24 10.8911 24 15.1982V24H23.9946Z"
-                  fill="#D1D5DB"
-                />
-              </svg></a>
-          <a class="links" href="https://github.com/santioviedo-dev" target="_blank"
-              ><svg class="svg-1"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.9998 22V18C15.1389 16.7473 14.7797 15.4901 13.9998 14.5C16.9998 14.5 19.9998 12.5 19.9998 9C20.0798 7.75 19.7298 6.52 18.9998 5.5C19.2798 4.35 19.2798 3.15 18.9998 2C18.9998 2 17.9998 2 15.9998 3.5C13.3598 3 10.6398 3 7.99979 3.5C5.99979 2 4.99979 2 4.99979 2C4.69979 3.15 4.69979 4.35 4.99979 5.5C4.27167 6.51588 3.91827 7.75279 3.99979 9C3.99979 12.5 6.99979 14.5 9.99979 14.5C9.60979 14.99 9.31979 15.55 9.14979 16.15C8.97979 16.75 8.92979 17.38 8.99979 18V22"
-                  stroke="#D1D5DB"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M9 18C4.49 20 4 16 2 16"
-                  stroke="#D1D5DB"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                /></svg></a>
-            <a class="links" href="https://x.com/S4nT1_Oviedo" target="_blank">
-              <svg class="svg-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 4.00002C22 4.00002 21.3 6.10002 20 7.40002C21.6 17.4 10.6 24.7 2 19C4.2 19.1 6.4 18.4 8 17C3 15.5 0.5 9.60002 3 5.00002C5.2 7.60002 8.6 9.10002 12 9.00002C11.1 4.80002 16 2.40002 19 5.20002C20.1 5.20002 22 4.00002 22 4.00002Z" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-        </div>
-    </section>
-    <footer class="container-fluid py-2 d-flex justify-content-center" style="background-color: #111827;">
-      <span>2024 | <span class="text-decoration-underline">Desarrollado</span> por <span class="fw-semibold">Santiago Oviedo</span></span>
-    </footer>
-
-
-
-
-    <!-- TOAST -->
-    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-    <div class="toast hide align-items-center bg-success" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex text-light">
-        <div class="toast-body">
-        ¡Texto copiado con éxito!
-       </div>
-        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
     </div>
+
+    <!-- Sistema de Reservas -->
+    <div class="project-card">
+      <div class="project-number">003 — Web App</div>
+      <img class="project-img" src="assets/img/reservations.png" alt="Sistema de Reservas">
+      <h3>Sistema de Reservas</h3>
+      <p>Sistema fullstack para gestión de turnos de canchas deportivas con login, validaciones de disponibilidad, CRUD completo y filtros.</p>
+      <div class="exp-tags" style="margin-bottom: 1.5rem;">
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">BulmaCSS</span>
+      </div>
+      <div class="project-footer">
+        <div class="project-links">
+          <a href="https://github.com/santioviedo-dev/fields-reservations" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="http://system.infinityfreeapp.com/index.php" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Demo
+          </a>
+        </div>
+      </div>
     </div>
-    
-    <script  src="assets/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="assets/js/index.js"></script>
-  </body>
+
+    <!-- JS Projects -->
+    <div class="project-card">
+      <div class="project-number">004 — Frontend</div>
+      <img class="project-img" src="assets/img/payment-details.png" alt="Proyectos JS">
+      <h3>Proyectos JavaScript</h3>
+      <p>Colección de proyectos frontend de práctica: formulario de tarjeta de crédito con animaciones CSS, to-do app con filtros, y calculadora con modo oscuro persistente.</p>
+      <div class="exp-tags" style="margin-bottom: 1.5rem;">
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+      <div class="project-footer">
+        <div class="project-links">
+          <a href="https://github.com/santioviedo-dev" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            Ver en GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">03 — Habilidades</div>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <div class="skill-group-title">Backend / Automatización</div>
+      <ul class="skill-list">
+        <li><strong>Python</strong> — scripting, APIs, pipelines</li>
+        <li>APIs REST, OAuth2</li>
+        <li>SMTP / IMAP</li>
+        <li>Procesamiento CSV / Excel</li>
+        <li>Bash scripting</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Infraestructura</div>
+      <ul class="skill-list">
+        <li><strong>Linux</strong> — Debian / Ubuntu</li>
+        <li>Proxmox (cluster 5 nodos)</li>
+        <li>pfSense, OpenVPN</li>
+        <li>Nginx / Apache</li>
+        <li>Zabbix, DNS, Samba</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Desarrollo Web</div>
+      <ul class="skill-list">
+        <li>JavaScript (vanilla)</li>
+        <li>PHP / Laravel (básico)</li>
+        <li>HTML / CSS</li>
+        <li>MySQL / PostgreSQL</li>
+        <li>Git, Google Workspace</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">04 — Contacto</div>
+  <h2 class="section-title">¿Hablamos?</h2>
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p>Estoy abierto a oportunidades en desarrollo backend, automatización o programación en general. No dudes en escribirme.</p>
+      <div class="contact-detail">
+        <span class="contact-detail-label">Email</span>
+        <span class="contact-detail-val">
+          <a href="mailto:oviedos412@gmail.com" id="emailLink">oviedos412@gmail.com</a>
+        </span>
+        <button onclick="copyText('oviedos412@gmail.com')" style="background:none;border:none;cursor:pointer;color:var(--muted);font-family:var(--mono);font-size:0.7rem;margin-left:auto;">copiar</button>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-detail-label">Teléfono</span>
+        <span class="contact-detail-val">+54 9 376 450-9714</span>
+        <button onclick="copyText('+54 9 376 450-9714')" style="background:none;border:none;cursor:pointer;color:var(--muted);font-family:var(--mono);font-size:0.7rem;margin-left:auto;">copiar</button>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-detail-label">Ubicación</span>
+        <span class="contact-detail-val">Posadas, Misiones, Argentina</span>
+      </div>
+    </div>
+    <div class="contact-right">
+      <a class="contact-platform" href="https://github.com/santioviedo-dev" target="_blank">
+        <div>
+          <div class="contact-platform-name">GitHub</div>
+          <div class="contact-platform-handle">github.com/santioviedo-dev</div>
+        </div>
+        <span class="contact-platform-arrow">↗</span>
+      </a>
+      <a class="contact-platform" href="https://www.linkedin.com/in/santiago-oviedo-analista/" target="_blank">
+        <div>
+          <div class="contact-platform-name">LinkedIn</div>
+          <div class="contact-platform-handle">santiago-oviedo-analista</div>
+        </div>
+        <span class="contact-platform-arrow">↗</span>
+      </a>
+      <a class="contact-platform" href="https://x.com/S4nT1_Oviedo" target="_blank">
+        <div>
+          <div class="contact-platform-name">X / Twitter</div>
+          <div class="contact-platform-handle">@S4nT1_Oviedo</div>
+        </div>
+        <span class="contact-platform-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2025 Santiago Oviedo</span>
+  <span>Posadas, Misiones · Argentina</span>
+</footer>
+
+<div class="toast" id="toast">¡Copiado al portapapeles!</div>
+
+<script>
+function copyText(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    const t = document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2000);
+  });
+}
+</script>
+</body>
 </html>
