@@ -1,0 +1,95 @@
+---
+const stats = [
+  { val: '9.16', label: 'Promedio carrera' },
+  { val: '+30',  label: 'Servidores Linux' },
+  { val: '~800', label: 'Cuentas migradas' },
+  { val: '−75%', label: 'Tiempo op. diaria' },
+];
+
+const experience = [
+  {
+    date: 'May 2025 — hoy',
+    title: 'Administrador de Sistemas (Sysadmin)',
+    company: 'Universidad Gastón Dachary',
+    desc: 'Administración de infraestructura Proxmox (5 nodos), +30 servidores Linux, redes pfSense y automatizaciones Python que integran APIs externas en producción.',
+    tags: ['Python', 'Proxmox', 'Linux', 'APIs REST', 'OAuth2', 'pfSense'],
+  },
+  {
+    date: '2025',
+    title: 'Instructor de Python (Online)',
+    company: 'Curso sincrónico via Discord',
+    desc: 'Diseño y dictado de curso de Python desde cero: temario, ejercicios prácticos y debugging en vivo. Clases particulares de informática y programación.',
+    tags: ['Python', 'Docencia'],
+  },
+  {
+    date: 'Ago 2023 — Abr 2025',
+    title: 'Soporte Técnico / Clases Virtuales',
+    company: 'Universidad Gastón Dachary',
+    desc: 'Administración de Zoom y Moodle para educación virtual, soporte IT general.',
+    tags: ['Zoom', 'Moodle', 'IT Support'],
+  },
+];
+---
+
+<section
+  id="about"
+  class="px-12 py-24 border-b border-line max-[900px]:px-6 max-[900px]:py-16"
+>
+  <!-- Section label -->
+  <div class="font-mono text-xs text-accent tracking-[0.15em] uppercase mb-12 flex items-center gap-4 after:flex-1 after:h-px after:bg-line">
+    01 — Sobre mí
+  </div>
+
+  <div class="grid grid-cols-[1fr_1.4fr] gap-20 items-start mt-12 max-[900px]:grid-cols-1 max-[900px]:gap-12">
+    <!-- Left -->
+    <div>
+      <p class="text-muted text-[0.95rem] mb-4">
+        Soy Analista de Sistemas recibido con promedio de <strong class="text-text font-normal">9.16</strong>,
+        actualmente trabajando como Sysadmin en la Universidad Gastón Dachary donde desarrollo
+        automatizaciones Python en producción.
+      </p>
+      <p class="text-muted text-[0.95rem] mb-4">
+        Mi perfil es principalmente <strong class="text-text font-normal">backend y automatización</strong>:
+        integro APIs con OAuth2, proceso datos estructurados, y construyo pipelines que reemplazan
+        flujos manuales por procesos confiables y escalables.
+      </p>
+      <p class="text-muted text-[0.95rem]">
+        Complemento esto con experiencia en infraestructura Linux, redes y virtualización — lo que
+        me da contexto real sobre cómo el software corre en producción.
+      </p>
+
+      <!-- Stats grid -->
+      <div class="grid grid-cols-2 gap-px mt-10 border border-line bg-line">
+        {stats.map(({ val, label }) => (
+          <div class="p-5 bg-bg2">
+            <div class="font-serif text-[2rem] font-bold text-accent leading-none">{val}</div>
+            <div class="font-mono text-xs text-muted tracking-[0.08em] mt-[0.3rem]">{label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Right: experience timeline -->
+    <div>
+      {experience.map(({ date, title, company, desc, tags }) => (
+        <div class="py-6 border-b border-line grid grid-cols-[auto_1fr] gap-x-6">
+          <div class="font-mono text-xs text-muted pt-[0.2rem] whitespace-nowrap min-w-[120px]">
+            {date}
+          </div>
+          <div>
+            <div class="text-[0.95rem] font-normal mb-1">{title}</div>
+            <div class="font-mono text-[0.75rem] text-accent mb-2">{company}</div>
+            <div class="text-[0.85rem] text-muted">{desc}</div>
+            <div class="flex flex-wrap gap-[0.4rem] mt-3">
+              {tags.map((tag) => (
+                <span class="font-mono text-2xs px-[0.6rem] py-[0.2rem] border border-line2 text-muted tracking-[0.05em]">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

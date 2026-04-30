@@ -1,0 +1,99 @@
+---
+const githubIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>`;
+const externalIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
+
+const projects = [
+  {
+    number: '001 — Producción',
+    title: 'ZoomTube',
+    desc: 'Pipeline de automatización completo que integra la API de Zoom y la API de YouTube con autenticación OAuth2. Descarga grabaciones, normaliza nombres y metadata, y las sube automáticamente sin intervención manual.',
+    impact: 'Redujo el flujo diario de 15–20 grabaciones de 1–2 hs a ~30 min',
+    tags: ['Python', 'Zoom API', 'YouTube API', 'OAuth2', 'Pipeline'],
+    links: [{ label: 'GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev/zoomtube' }],
+  },
+  {
+    number: '002 — Producción',
+    title: 'MailOps',
+    desc: 'Herramienta interna para operaciones masivas sobre cuentas de correo vía cPanel API: creación desde CSV/Excel, generación automática de credenciales y notificaciones SMTP con templates.',
+    impact: 'Eliminó gestión manual de ~800 cuentas durante migración',
+    tags: ['Python', 'cPanel API', 'SMTP', 'CSV/Excel'],
+    links: [{ label: 'GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev/MailOps' }],
+  },
+  {
+    number: '003 — Web App',
+    title: 'Sistema de Reservas',
+    desc: 'Sistema fullstack para gestión de turnos de canchas deportivas con login, validaciones de disponibilidad, CRUD completo y filtros.',
+    img: '/assets/img/reservations.png',
+    tags: ['PHP', 'MySQL', 'JavaScript', 'BulmaCSS'],
+    links: [
+      { label: 'GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev/fields-reservations' },
+      { label: 'Demo', icon: 'external', href: 'http://system.infinityfreeapp.com/index.php' },
+    ],
+  },
+  {
+    number: '004 — Frontend',
+    title: 'Proyectos JavaScript',
+    desc: 'Colección de proyectos frontend de práctica: formulario de tarjeta de crédito con animaciones CSS, to-do app con filtros, y calculadora con modo oscuro persistente.',
+    img: '/assets/img/payment-details.png',
+    tags: ['JavaScript', 'HTML', 'CSS'],
+    links: [{ label: 'Ver en GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev' }],
+  },
+];
+---
+
+<section
+  id="projects"
+  class="px-12 py-24 border-b border-line max-[900px]:px-6 max-[900px]:py-16"
+>
+  <div class="font-mono text-xs text-accent tracking-[0.15em] uppercase mb-12 flex items-center gap-4 after:flex-1 after:h-px after:bg-line">
+    02 — Proyectos
+  </div>
+
+  <div class="grid grid-cols-2 gap-px bg-line mt-12 max-[900px]:grid-cols-1">
+    {projects.map(({ number, title, desc, impact, tags, links, img }) => (
+      <div class="bg-bg p-10 relative overflow-hidden transition-colors duration-200 hover:bg-bg2 group">
+        <div class="font-mono text-xs text-line2 tracking-[0.1em] mb-6">{number}</div>
+
+        {img && (
+          <img
+            src={img}
+            alt={title}
+            class="w-full h-[180px] object-cover mb-6 transition-all duration-300 group-hover:brightness-90"
+            style="filter: grayscale(30%) brightness(0.8)"
+          />
+        )}
+
+        <h3 class="font-serif text-[1.4rem] font-bold tracking-[-0.01em] mb-3 leading-[1.2]">
+          {title}
+        </h3>
+        <p class="text-[0.875rem] text-muted leading-[1.7] mb-5">{desc}</p>
+
+        {impact && (
+          <div class="font-mono text-[0.75rem] text-accent px-3 py-2 border-l-2 border-accent mb-6"
+               style="background: rgba(232,201,122,0.05)">
+            {impact}
+          </div>
+        )}
+
+        <div class="flex flex-wrap gap-[0.4rem] mb-6">
+          {tags.map((tag) => (
+            <span class="font-mono text-2xs px-[0.6rem] py-[0.2rem] border border-line2 text-muted tracking-[0.05em]">
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div class="flex items-center gap-4">
+          {links.map(({ label, icon, href }) => (
+            <a
+              href={href}
+              target="_blank"
+              class="font-mono text-xs text-muted no-underline tracking-[0.05em] transition-colors duration-200 hover:text-accent flex items-center gap-[0.35rem]"
+              set:html={`${icon === 'github' ? githubIcon : externalIcon} ${label}`}
+            />
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
