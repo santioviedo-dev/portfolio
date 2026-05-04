@@ -19,8 +19,19 @@ const projects = [
     tags: ['Python', 'cPanel API', 'SMTP', 'CSV/Excel'],
     links: [{ label: 'GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev/MailOps' }],
   },
-  {
+    {
     number: '003 — Web App',
+    title: 'Expense Tracker',
+    desc: 'Aplicación web con Flask y PostgreSQL para seguimiento de gastos personales con autenticación y CRUD completo. Permite categorizar gastos y visualizar estadísticas mensuales.',
+    img: '/assets/img/expensetracker.png',
+    tags: ['Python', 'Flask', 'Tailwind CSS', 'PostgreSQL'],
+    links: [
+      { label: 'GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev/expensetracker' },
+      { label: 'Demo', icon: 'external', href: 'https://expensetracker-santioviedo.vercel.app/' },
+    ],
+  },
+  {
+    number: '004 — Web App',
     title: 'Sistema de Reservas',
     desc: 'Sistema fullstack para gestión de turnos de canchas deportivas con login, validaciones de disponibilidad, CRUD completo y filtros.',
     img: '/assets/img/reservations.png',
@@ -31,7 +42,7 @@ const projects = [
     ],
   },
   {
-    number: '004 — Frontend',
+    number: '005 — Frontend',
     title: 'Proyectos JavaScript',
     desc: 'Colección de proyectos frontend de práctica: formulario de tarjeta de crédito con animaciones CSS, to-do app con filtros, y calculadora con modo oscuro persistente.',
     img: '/assets/img/payment-details.png',
