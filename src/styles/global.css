@@ -20,3 +20,9 @@
   --text-sm: 0.75rem;
   --text-base: 0.875rem;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
