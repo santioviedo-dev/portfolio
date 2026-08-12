@@ -120,5 +120,8 @@ build/
 dist/
 out/
 
+# Astro generated files
+.astro/
+
 # Personal portfolio specific (if applicable)
 # Add any project-specific ignores here
