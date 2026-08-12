@@ -45,6 +45,7 @@ export const projects: Project[] = [
     number: "003 — API REST",
     title: "Sandev Academy",
     desc: "Backend completo para una plataforma de gestión de cursos con Django REST Framework. Incluye autenticación JWT, roles (admin/profesor/alumno), cursos asincrónicos y sincrónicos, evaluaciones con corrección automática y manual, emisión de certificados por señales Django y mensajería interna por curso.",
+    img: "/assets/img/backend.png",
     tags: ["Python", "Django", "DRF", "PostgreSQL", "JWT", "Supabase"],
     links: [
       {
