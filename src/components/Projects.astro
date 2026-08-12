@@ -2,54 +2,8 @@
 const githubIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>`;
 const externalIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
 
-const projects = [
-  {
-    number: '001 — Producción',
-    title: 'ZoomTube',
-    desc: 'Pipeline de automatización completo que integra la API de Zoom y la API de YouTube con autenticación OAuth2. Descarga grabaciones, normaliza nombres y metadata, y las sube automáticamente sin intervención manual.',
-    impact: 'Redujo el flujo diario de 15–20 grabaciones de 1–2 hs a ~30 min',
-    tags: ['Python', 'Zoom API', 'YouTube API', 'OAuth2', 'Pipeline'],
-    links: [{ label: 'GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev/zoomtube' }],
-  },
-  {
-    number: '002 — Producción',
-    title: 'MailOps',
-    desc: 'Herramienta interna para operaciones masivas sobre cuentas de correo vía cPanel API: creación desde CSV/Excel, generación automática de credenciales y notificaciones SMTP con templates.',
-    impact: 'Eliminó gestión manual de ~800 cuentas durante migración',
-    tags: ['Python', 'cPanel API', 'SMTP', 'CSV/Excel'],
-    links: [{ label: 'GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev/MailOps' }],
-  },
-    {
-    number: '003 — Web App',
-    title: 'Expense Tracker',
-    desc: 'Aplicación web con Flask y PostgreSQL para seguimiento de gastos personales con autenticación y CRUD completo. Permite categorizar gastos y visualizar estadísticas mensuales.',
-    img: '/assets/img/expensetracker.png',
-    tags: ['Python', 'Flask', 'Tailwind CSS', 'PostgreSQL'],
-    links: [
-      { label: 'GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev/expensetracker' },
-      { label: 'Demo', icon: 'external', href: 'https://expensetracker-santioviedo.vercel.app/' },
-    ],
-  },
-  {
-    number: '004 — Web App',
-    title: 'Sistema de Reservas',
-    desc: 'Sistema fullstack para gestión de turnos de canchas deportivas con login, validaciones de disponibilidad, CRUD completo y filtros.',
-    img: '/assets/img/reservations.png',
-    tags: ['PHP', 'MySQL', 'JavaScript', 'BulmaCSS'],
-    links: [
-      { label: 'GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev/fields-reservations' },
-      { label: 'Demo', icon: 'external', href: 'http://system.infinityfreeapp.com/index.php' },
-    ],
-  },
-  {
-    number: '005 — Frontend',
-    title: 'Proyectos JavaScript',
-    desc: 'Colección de proyectos frontend de práctica: formulario de tarjeta de crédito con animaciones CSS, to-do app con filtros, y calculadora con modo oscuro persistente.',
-    img: '/assets/img/payment-details.png',
-    tags: ['JavaScript', 'HTML', 'CSS'],
-    links: [{ label: 'Ver en GitHub', icon: 'github', href: 'https://github.com/santioviedo-dev' }],
-  },
-];
+import { projects } from '../data/projects';
+
 ---
 
 <section
@@ -99,6 +53,7 @@ const projects = [
             <a
               href={href}
               target="_blank"
+              rel="noopener noreferrer"
               class="font-mono text-xs text-muted no-underline tracking-[0.05em] transition-colors duration-200 hover:text-accent flex items-center gap-[0.35rem]"
               set:html={`${icon === 'github' ? githubIcon : externalIcon} ${label}`}
             />
